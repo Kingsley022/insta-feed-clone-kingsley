@@ -1,1 +1,17 @@
+/* Tailwind imports */
 @import "tailwindcss";
+
+/* Swiprer imports */
+@import "swiper/css";
+@import "swiper/css/scrollbar";
+@import "swiper/css/navigation";
+
+/* Native CSS */
+.hide-scroll{
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+  
+  .hide-scroll::-webkit-scrollbar {
+    display: none;
+  }

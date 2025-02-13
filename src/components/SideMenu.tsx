@@ -67,7 +67,7 @@ const SideMenu = () => {
     ];
 
     return (
-        <aside className="col-span-1 h-[100vh] px-6 py-12 flex flex-col gap-6 border-r-1 border-r-[#8080804b]">
+        <aside className="col-span-2 h-[100vh] px-6 py-12 flex flex-col gap-6 border-r-1 border-r-[#8080804b]">
             <img src={logo} alt="instagram logo" className="w-[120px] object-contain mx-2"/>
             <div className="flex flex-col">
                 {
