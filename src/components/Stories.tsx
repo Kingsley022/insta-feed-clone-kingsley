@@ -1,6 +1,7 @@
 import { MdKeyboardArrowLeft, MdKeyboardArrowRight } from "react-icons/md";
 import user from "../assets/images/user.jpg";
 import { useEffect, useRef, useState } from "react";
+import stories from "../json/stories.json"
 
 const Stories = () => {
     const storiesRef = useRef<HTMLDivElement>(null);
@@ -20,7 +21,7 @@ const Stories = () => {
     const scrollLeft = () => {
         if (storiesRef.current) {
             storiesRef.current.scrollBy({
-                left: -90,
+                left: -120,
                 behavior: "smooth"
             });
         }
@@ -30,7 +31,7 @@ const Stories = () => {
     const scrollRight = () => {
         if (storiesRef.current) {
             storiesRef.current.scrollBy({
-                left: 90,
+                left: 120,
                 behavior: "smooth",
             });
         }
@@ -62,14 +63,19 @@ const Stories = () => {
 
     return (
         <div className="relative overflow-hidden w-full">
-            <div ref={storiesRef} className="flex px-3 py-6 gap-6 justify-between overflow-x-scroll hide-scroll">
-                {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].slice(0, 10).map((story) => (
-                    <div key={story} className="flex flex-col gap-1 items-center">
+            <div ref={storiesRef} className="flex px-3 py-6 gap-[18.5px] justify-between overflow-x-scroll hide-scroll">
+                {stories?.map((story) => (
+                    <div key={story.id} className="flex flex-col gap-1 items-center cursor-pointer">
                         <div className="relative w-17 h-17 flex items-center justify-center">
-                            <div className="absolute inset-0 bg-gradient-to-r from-yellow-400 via-red-500 to-purple-600 rounded-full p-[2px]">
+                            <div  className={`absolute inset-0 ${
+                                        story.is_seen
+                                            ? "bg-gray-600"
+                                            : "bg-gradient-to-r from-yellow-400 via-red-500 to-purple-600"
+                                    } rounded-full p-[2px]`}
+                                >
                                 <div className="w-full h-full rounded-full bg-black p-[2px]">
                                     <img
-                                        src={user}
+                                        src={story.profile_image || user}
                                         alt="user"
                                         className="w-full h-full object-cover object-top rounded-full"
                                     />
@@ -77,7 +83,7 @@ const Stories = () => {
                             </div>
                         </div>
 
-                        <span className="text-sm">Kingsley_{story}</span>
+                        <span className="text-sm">{story.username}</span>
                     </div>
                 ))}
             </div>

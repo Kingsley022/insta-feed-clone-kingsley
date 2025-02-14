@@ -1,0 +1,75 @@
+[
+    {
+      "id": 1,
+      "username": "john_doe",
+      "profile_image": "https://randomuser.me/api/portraits/men/1.jpg",
+      "is_seen": false
+    },
+    {
+      "id": 2,
+      "username": "jane_smith",
+      "profile_image": "https://randomuser.me/api/portraits/women/2.jpg",
+      "is_seen": true
+    },
+    {
+      "id": 3,
+      "username": "alex_king",
+      "profile_image": "https://randomuser.me/api/portraits/men/3.jpg",
+      "is_seen": false
+    },
+    {
+      "id": 4,
+      "username": "sarah_lee",
+      "profile_image": "https://randomuser.me/api/portraits/women/4.jpg",
+      "is_seen": true
+    },
+    {
+      "id": 5,
+      "username": "david_wilson",
+      "profile_image": "https://randomuser.me/api/portraits/men/5.jpg",
+      "is_seen": false
+    },
+    {
+      "id": 6,
+      "username": "emma_watson",
+      "profile_image": "https://randomuser.me/api/portraits/women/6.jpg",
+      "is_seen": false
+    },
+    {
+      "id": 7,
+      "username": "chris_evans",
+      "profile_image": "https://randomuser.me/api/portraits/men/7.jpg",
+      "is_seen": true
+    },
+    {
+      "id": 8,
+      "username": "lucy_fern",
+      "profile_image": "https://randomuser.me/api/portraits/women/8.jpg",
+      "is_seen": false
+    },
+    {
+      "id": 9,
+      "username": "mark_ross",
+      "profile_image": "https://randomuser.me/api/portraits/men/9.jpg",
+      "is_seen": true
+    },
+    {
+      "id": 10,
+      "username": "sophia_miller",
+      "profile_image": "https://randomuser.me/api/portraits/women/10.jpg",
+      "is_seen": false
+    },
+    {
+      "id": 11,
+      "username": "ryan_cooper",
+      "profile_image": "https://randomuser.me/api/portraits/men/11.jpg",
+      "is_seen": false
+    },
+    {
+      "id": 12,
+      "username": "zoe_harris",
+      "profile_image": "https://randomuser.me/api/portraits/women/12.jpg",
+      "is_seen": true
+    }
+  ]
+  

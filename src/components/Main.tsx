@@ -1,16 +1,17 @@
 import Posts from "./Posts"
 import Stories from "./Stories"
+import Suggestions from "./Suggestions"
 
 const Main = () => {
 
     return (
-        <main className="col-span-10 flex overflow-y-scroll">
-            <div className="text-white w-[70%]">
+        <main className="col-span-10 flex gap-6 overflow-y-scroll">
+            <div className="text-white w-[66%]">
                 <Stories/>
                 <Posts/>
             </div>
 
-            <div className="bg-amber-300 w-[30%]">Hello</div>
+            <Suggestions/>
         </main>
     )
 }
