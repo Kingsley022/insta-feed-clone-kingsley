@@ -21,7 +21,7 @@ const Stories = () => {
     const scrollLeft = () => {
         if (storiesRef.current) {
             storiesRef.current.scrollBy({
-                left: -120,
+                left: -200,
                 behavior: "smooth"
             });
         }
@@ -31,7 +31,7 @@ const Stories = () => {
     const scrollRight = () => {
         if (storiesRef.current) {
             storiesRef.current.scrollBy({
-                left: 120,
+                left: 200,
                 behavior: "smooth",
             });
         }
@@ -83,7 +83,7 @@ const Stories = () => {
                             </div>
                         </div>
 
-                        <span className="text-sm">{story.username}</span>
+                        <span className="text-sm">{story.username.length > 10 ? story.username.slice(0,7)+"..." : story.username}</span>
                     </div>
                 ))}
             </div>
