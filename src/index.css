@@ -15,3 +15,11 @@
   .hide-scroll::-webkit-scrollbar {
     display: none;
   }
+
+  .emoji-picker-react .mood-picker {
+    display: none;
+  }
+
+  .emoji-background{
+    background-color: black;
+  }
