@@ -4,7 +4,8 @@ export interface Post {
     profile_image: string;
     post_image: string;
     caption: string;
-    location?: string; // Optional, as not all posts have a location
+    is_saved: boolean,
+    location?: string;
     likes: number;
     liked_by: LikedUser[];
     comments: number;

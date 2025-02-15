@@ -1,8 +1,7 @@
 import { BsDot } from 'react-icons/bs'
-import { FaHeart, FaRegHeart } from 'react-icons/fa'
+import { FaBookmark, FaHeart, FaRegBookmark, FaRegHeart } from 'react-icons/fa'
 import { FiSend } from 'react-icons/fi'
 import { IoIosMore } from 'react-icons/io'
-import { LiaBookmark } from 'react-icons/lia'
 import { RiChat3Line } from 'react-icons/ri'
 import { Post } from '../types'
 import { useContext, useState } from 'react'
@@ -36,7 +35,23 @@ const PostCard = ({post}:{post:Post}) => {
         setPosts(updatedPosts);
     };
 
-    // handles comments click
+    // Save handler
+    const handleSave = () => {
+        const updatedPosts = posts.map(initial_post => {
+            if(initial_post.id == post.id){
+                return {
+                    ...post, 
+                    is_saved: !initial_post.is_saved, 
+                }
+            }else{
+                return initial_post
+            }
+        });
+
+        setPosts(updatedPosts);
+    };
+
+    // handles comment click
     const handleViewComments = () => {
         setSelectedPost(post);
         setOpenComments(true);
@@ -101,7 +116,19 @@ const PostCard = ({post}:{post:Post}) => {
                         <FiSend className="cursor-pointer"/>
                     </div>
 
-                    <LiaBookmark className="cursor-pointer"/>
+                    {post.is_saved ? ( 
+                            <FaBookmark
+                                onClick={handleSave}
+                                className='cursor-pointer'
+                            />
+                        ) : (
+                            <FaRegBookmark
+                                onClick={handleSave} 
+                                className='cursor-pointer'
+                            />
+                        )
+                    }
+
                 </div>
 
                 {/* Likes */}

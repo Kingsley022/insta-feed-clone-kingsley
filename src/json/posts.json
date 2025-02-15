@@ -6,6 +6,7 @@
     "post_image": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?crop=entropy&cs=tinysrgb&fit=max&ixid=MnwzNjc5OXwwfDF8c2VhY2h8Mnx8Y29mZmVlfGVufDB8fHx8fDE2NjQ4MjgxNTM&ixlib=rb-1.2.1&q=80&w=1080",
     "caption": "Amazing sunset at the beach! 🌅 #SunsetLover",
     "location": "Miami, Florida",
+    "is_saved": false,
     "likes": 1253,
     "liked_by": [
       { "username": "emma_smith", "profile_image": "https://randomuser.me/api/portraits/women/2.jpg" },
@@ -38,6 +39,7 @@
     "post_image": "https://people.com/thmb/FscY8nO00Ol3QHwvrTSmHYgg_JE=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():focal(599x209:601x211):format(webp)/christiano-ronaldo-2-9af96f2d100549c68378dabd3915134a.jpg",
     "caption": "Exploring the mountains 🏔️💙",
     "location": "Aspen, Colorado",
+    "is_saved": false,
     "likes": 3090,
     "liked_by": [
       { "username": "john_doe", "profile_image": "https://randomuser.me/api/portraits/men/1.jpg" },
@@ -70,6 +72,7 @@
     "post_image": "https://images.unsplash.com/photo-1522202176988-66273c2fd55f",
     "caption": "Road trip adventures 🚗💨",
     "location": "Route 66, USA",
+    "is_saved": false,
     "likes": 2107,
     "liked_by": [
       { "username": "emma_smith", "profile_image": "https://randomuser.me/api/portraits/women/2.jpg" }
@@ -93,6 +96,7 @@
     "post_image": "https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0",
     "caption": "Best coffee in town ☕❤️",
     "location": "Seattle, Washington",
+    "is_saved": false,
     "likes": 2750,
     "liked_by": [
       { "username": "sophia_moore", "profile_image": "https://randomuser.me/api/portraits/women/5.jpg" }
@@ -116,6 +120,7 @@
     "post_image": "https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?crop=entropy&cs=tinysrgb&fit=max&ixid=MnwzNjc5OXwwfDF8c2VhY2h8MXx8Y2l0eXxjb3VwbGV8ZW58MHx8fHwxNjY0NzA1Nzk2&ixlib=rb-1.2.1&q=80&w=1080",
     "caption": "City lights at night 🌃✨",
     "location": "New York City",
+    "is_saved": true,
     "likes": 3155,
     "liked_by": [
       { "username": "john_doe", "profile_image": "https://randomuser.me/api/portraits/men/1.jpg" }
@@ -139,6 +144,7 @@
     "post_image": "https://hips.hearstapps.com/hmg-prod/images/lionel-messi-celebrates-after-their-sides-third-goal-by-news-photo-1686170172.jpg?crop=0.66653xw:1xh;center,top&resize=640:*",
     "caption": "Weekend getaway by the lake 🌊",
     "location": "Lake Tahoe",
+    "is_saved": false,
     "likes": 1893,
     "liked_by": [
       { "username": "alex_jones", "profile_image": "https://randomuser.me/api/portraits/men/3.jpg" }
