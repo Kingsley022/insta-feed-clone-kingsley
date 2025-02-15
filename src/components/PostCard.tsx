@@ -6,8 +6,8 @@ import { RiChat3Line } from 'react-icons/ri'
 import { Post } from '../types'
 import { useContext, useState } from 'react'
 import { AppContext } from './Main'
-import CommentForm from '../json/CommentForm'
 import Comments from './Comments'
+import CommentForm from './CommentForm'
 
 const PostCard = ({post}:{post:Post}) => {
 

@@ -1,0 +1,48 @@
+[
+    {
+      "id": 1,
+      "username": "john_doe",
+      "profile_image": "https://randomuser.me/api/portraits/men/1.jpg",
+      "full_name": "John Doe",
+      "mutual_friends": 3,
+      "mutual_username": "alex_king",
+      "is_following": false
+    },
+    {
+      "id": 2,
+      "username": "sarah_smith",
+      "profile_image": "https://randomuser.me/api/portraits/women/2.jpg",
+      "full_name": "Sarah Smith",
+      "mutual_friends": 5,
+      "mutual_username": "jane_doe",
+      "is_following": false
+    },
+    {
+      "id": 3,
+      "username": "mike_89",
+      "profile_image": "https://randomuser.me/api/portraits/men/3.jpg",
+      "full_name": "Michael Johnson",
+      "mutual_friends": 2,
+      "mutual_username": "chris_walker",
+      "is_following": false
+    },
+    {
+      "id": 4,
+      "username": "emma_rose",
+      "profile_image": "https://randomuser.me/api/portraits/women/4.jpg",
+      "full_name": "Emma Rose",
+      "mutual_friends": 4,
+      "mutual_username": "mike_89",
+      "is_following": false
+    },
+    {
+      "id": 5,
+      "username": "chris_walker",
+      "profile_image": "https://randomuser.me/api/portraits/men/5.jpg",
+      "full_name": "Chris Walker",
+      "mutual_friends": 1,
+      "mutual_username": "john_doe",
+      "is_following": false
+    }
+  ]
+  
