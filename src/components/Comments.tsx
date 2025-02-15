@@ -1,5 +1,4 @@
 import { useContext } from "react"
-import { AppContext } from "./Main"
 import post from "../assets/images/user.jpg"
 import ProfilePicture from "./ProfilePicture";
 import { IoIosStar } from "react-icons/io";
@@ -7,6 +6,7 @@ import { MdOutlineMoreHoriz } from "react-icons/md";
 import { FaHeart, FaRegHeart } from "react-icons/fa";
 import { LiaTimesSolid } from "react-icons/lia";
 import CommentForm2 from "./CommentForm2";
+import { AppContext } from "../App";
 
 interface Props {
     openComments: boolean,

@@ -1,5 +1,5 @@
 import { useContext, useState } from "react"
-import { AppContext } from "./Main"
+import { AppContext } from "../App";
 import ig_suggestions from "../json/suggestions.json"
 
 const Suggestions = () => {

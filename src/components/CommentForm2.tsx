@@ -1,7 +1,7 @@
 import EmojiPicker from "emoji-picker-react";
 import { useContext, useEffect, useRef, useState } from "react"
 import { BsEmojiSmile } from "react-icons/bs"
-import { AppContext } from "../components/Main";
+import { AppContext } from "../App";
 
 const CommentForm2 = ({id}:{id:number}) => {
     const [inputValue, setInputValue] = useState("");

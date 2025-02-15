@@ -1,5 +1,5 @@
 import { useContext, useEffect, useState } from "react";
-import { AppContext } from "./Main";
+import { AppContext } from "../App";
 import PostCard from "./PostCard";
 import { Post } from "../types";
 

@@ -5,7 +5,7 @@ import { IoIosMore } from 'react-icons/io'
 import { RiChat3Line } from 'react-icons/ri'
 import { Post } from '../types'
 import { useContext, useState } from 'react'
-import { AppContext } from './Main'
+import { AppContext } from "../App";
 import Comments from './Comments'
 import CommentForm from './CommentForm'
 import Caption from './Caption'
