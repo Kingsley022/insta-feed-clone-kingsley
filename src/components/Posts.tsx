@@ -13,7 +13,7 @@ const Posts = () => {
     return (
         <div className="flex flex-col px-24 mt-4 gap-6">
             {posts.map((post:Post) => (
-                <PostCard post={post}/>
+                <PostCard post={post} key={post.id}/>
             ))}
         </div>
     )

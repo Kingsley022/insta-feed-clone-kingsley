@@ -1,12 +1,16 @@
 import EmojiPicker from "emoji-picker-react";
-import { useEffect, useRef, useState } from "react"
+import { useContext, useEffect, useRef, useState } from "react"
 import { BsEmojiSmile } from "react-icons/bs"
+import { AppContext } from "../components/Main";
 
-const CommentForm = () => {
+const CommentForm = ({id}:{id:number}) => {
     const [inputValue, setInputValue] = useState("");
     const [emojiPickerVisible, setEmojiPickerVisible] = useState(false);
     const emojiPickerRef = useRef<HTMLFormElement | null>(null);
 
+    const context = useContext(AppContext);
+    if(!context) return;
+    const {user, posts, setPosts} = context;
 
     // Function to handle emoji selection
     const handleEmojiClick = (emojiData: any) => {
@@ -28,8 +32,38 @@ const CommentForm = () => {
         };
     }, []);
 
+
+    // Post's Comment
+    const handlePost = (event: React.FormEvent<HTMLFormElement>) =>{
+        event.preventDefault();
+
+        if(!inputValue) return;
+
+        const comment = {
+            username: user.username,
+            profile_image: user.profile_image,
+            comment: inputValue,
+            likes: 0,
+            replies: []
+        };
+
+        const updatedPosts = posts.map(post => {
+            if(post.id == id){
+                return {...post, comments_list: [comment, ...post.comments_list]}
+            }
+            return post
+        });    
+        setPosts(updatedPosts);
+        setInputValue("");
+        alert("Comment added");
+    }
+
     return (
-        <form ref={emojiPickerRef} action="" className="relative flex justify-between w-full items-center">
+        <form 
+            ref={emojiPickerRef} 
+            className="relative flex justify-between w-full items-center"
+            onSubmit={handlePost}
+        >
             <input value={inputValue} onChange={(event) => setInputValue(event.target.value)} type="text" placeholder="Add a comment..." className="py-1 outline-none w-full" />
             <div className="flex items-center gap-2">
                 {inputValue && <button type="submit" className="text-blue-500 cursor-pointer">Post</button>}

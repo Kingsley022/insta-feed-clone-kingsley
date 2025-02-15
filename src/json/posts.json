@@ -1,176 +1,158 @@
 [
-    {
-      "id": 1,
-      "username": "john_doe",
-      "profile_image": "https://randomuser.me/api/portraits/men/1.jpg",
-      "post_image": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?crop=entropy&cs=tinysrgb&fit=max&ixid=MnwzNjc5OXwwfDF8c2VhY2h8Mnx8Y29mZmVlfGVufDB8fHx8fDE2NjQ4MjgxNTM&ixlib=rb-1.2.1&q=80&w=1080",
-      "caption": "Amazing sunset at the beach! 🌅 #SunsetLover",
-      "location": "Miami, Florida",
-      "likes": 1253,
-      "liked_by": [
-        { "username": "emma_smith", "profile_image": "https://randomuser.me/api/portraits/women/2.jpg" },
-        { "username": "alex_jones", "profile_image": "https://randomuser.me/api/portraits/men/3.jpg" },
-        { "username": "sophia_moore", "profile_image": "https://randomuser.me/api/portraits/women/5.jpg" }
-      ],
-      "comments": 98,
-      "is_liked": false,
-      "comments_list": [
-        {
-          "username": "emma_smith",
-          "profile_image": "https://randomuser.me/api/portraits/women/2.jpg",
-          "comment": "Wow, this view is amazing! 😍",
-          "likes": 32,
-          "replies": [
-            {
-              "username": "john_doe",
-              "profile_image": "https://randomuser.me/api/portraits/men/1.jpg",
-              "comment": "I know right! 🌅"
-            }
-          ]
-        },
-        {
-          "username": "alex_jones",
-          "profile_image": "https://randomuser.me/api/portraits/men/3.jpg",
-          "comment": "Perfect shot! 📸",
-          "likes": 10
-        }
-      ]
-    },
-    {
-      "id": 2,
-      "username": "sophia_moore",
-      "profile_image": "https://randomuser.me/api/portraits/women/5.jpg",
-      "post_image": "https://people.com/thmb/FscY8nO00Ol3QHwvrTSmHYgg_JE=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():focal(599x209:601x211):format(webp)/christiano-ronaldo-2-9af96f2d100549c68378dabd3915134a.jpg",
-      "caption": "Exploring the mountains 🏔️💙",
-      "location": "Aspen, Colorado",
-      "likes": 3090,
-      "liked_by": [
-        { "username": "john_doe", "profile_image": "https://randomuser.me/api/portraits/men/1.jpg" },
-        { "username": "michael_brown", "profile_image": "https://randomuser.me/api/portraits/men/6.jpg" },
-        { "username": "olivia_jackson", "profile_image": "https://randomuser.me/api/portraits/women/7.jpg" }
-      ],
-      "comments": 154,
-      "is_liked": true,
-      "comments_list": [
-        {
-          "username": "john_doe",
-          "profile_image": "https://randomuser.me/api/portraits/men/1.jpg",
-          "comment": "This place looks magical! ✨",
-          "likes": 45,
-          "replies": [
-            {
-              "username": "sophia_moore",
-              "profile_image": "https://randomuser.me/api/portraits/women/5.jpg",
-              "comment": "It really is! 🏔️💙"
-            }
-          ]
-        },
-        {
-          "username": "michael_brown",
-          "profile_image": "https://randomuser.me/api/portraits/men/6.jpg",
-          "comment": "Breathtaking view, I need to visit soon! 😲",
-          "likes": 20
-        }
-      ]
-    },
-    {
-      "id": 3,
-      "username": "liam_wilson",
-      "profile_image": "https://randomuser.me/api/portraits/men/8.jpg",
-      "post_image": "https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?crop=entropy&cs=tinysrgb&fit=max&ixid=MnwzNjc5OXwwfDF8c2VhY2h8MHx8c3Vuc2V0fGVufDB8fHx8fDE2NjQ4MzUzNjM&ixlib=rb-1.2.1&q=80&w=1080",
-      "caption": "City vibes 🏙️✨",
-      "likes": 542,
-      "liked_by": [
-        { "username": "mia_thomas", "profile_image": "https://randomuser.me/api/portraits/women/9.jpg" },
-        { "username": "james_miller", "profile_image": "https://randomuser.me/api/portraits/men/10.jpg" },
-        { "username": "chris_walker", "profile_image": "https://randomuser.me/api/portraits/men/4.jpg" }
-      ],
-      "comments": 24,
-      "is_liked": false,
-      "comments_list": [
-        {
-          "username": "mia_thomas",
-          "profile_image": "https://randomuser.me/api/portraits/women/9.jpg",
-          "comment": "The city looks so alive! 🏙️",
-          "likes": 12
-        }
-      ]
-    },
-    {
-      "id": 4,
-      "username": "ava_anderson",
-      "profile_image": "https://randomuser.me/api/portraits/women/12.jpg",
-      "post_image": "https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?crop=entropy&cs=tinysrgb&fit=max&ixid=MnwzNjc5OXwwfDF8c2VhY2h8MXx8Y2l0eXxjb3VwbGV8ZW58MHx8fHwxNjY0NzA1Nzk2&ixlib=rb-1.2.1&q=80&w=1080",
-      "caption": "Morning coffee ☕ and good vibes!",
-      "likes": 1870,
-      "liked_by": [
-        { "username": "lucas_white", "profile_image": "https://randomuser.me/api/portraits/men/13.jpg" },
-        { "username": "john_doe", "profile_image": "https://randomuser.me/api/portraits/men/1.jpg" },
-        { "username": "sophia_moore", "profile_image": "https://randomuser.me/api/portraits/women/5.jpg" }
-      ],
-      "comments": 67,
-      "is_liked": true,
-      "comments_list": [
-        {
-          "username": "lucas_white",
-          "profile_image": "https://randomuser.me/api/portraits/men/13.jpg",
-          "comment": "Perfect way to start the day ☀️",
-          "likes": 15
-        },
-        {
-          "username": "sophia_moore",
-          "profile_image": "https://randomuser.me/api/portraits/women/5.jpg",
-          "comment": "I need this in the mornings too! ☕",
-          "likes": 8
-        }
-      ]
-    },
-    {
-      "id": 5,
-      "username": "chris_walker",
-      "profile_image": "https://randomuser.me/api/portraits/men/4.jpg",
-      "post_image": "https://hips.hearstapps.com/hmg-prod/images/lionel-messi-celebrates-after-their-sides-third-goal-by-news-photo-1686170172.jpg?crop=0.66653xw:1xh;center,top&resize=640:*",
-      "caption": "Street photography 📷",
-      "likes": 975,
-      "liked_by": [
-        { "username": "michael_brown", "profile_image": "https://randomuser.me/api/portraits/men/6.jpg" },
-        { "username": "emma_smith", "profile_image": "https://randomuser.me/api/portraits/women/2.jpg" },
-        { "username": "liam_wilson", "profile_image": "https://randomuser.me/api/portraits/men/8.jpg" }
-      ],
-      "comments": 32,
-      "is_liked": false,
-      "comments_list": [
-        {
-          "username": "emma_smith",
-          "profile_image": "https://randomuser.me/api/portraits/women/2.jpg",
-          "comment": "This is a cool moment captured! 📸",
-          "likes": 5
-        }
-      ]
-    },
-    {
-      "id": 6,
-      "username": "mia_thomas",
-      "profile_image": "https://randomuser.me/api/portraits/women/9.jpg",
-      "post_image": "https://images.unsplash.com/photo-1551024709-8f23befc6f87?crop=entropy&cs=tinysrgb&fit=max&ixid=MnwzNjc5OXwwfDF8c2VhY2h8Mnx8YmFraW5nJTIwc29tZSUyMGhvbWVtYWRlJTIwY29va2llfGVufDB8fHx8fDE2NjQ3Mzk2OTg&ixlib=rb-1.2.1&q=80&w=1080",
-      "caption": "Baking some homemade cookies 🍪😋",
-      "location": "Los Angeles, California",
-      "likes": 1445,
-      "liked_by": [
-        { "username": "ava_anderson", "profile_image": "https://randomuser.me/api/portraits/women/12.jpg" },
-        { "username": "chris_walker", "profile_image": "https://randomuser.me/api/portraits/men/4.jpg" },
-        { "username": "john_doe", "profile_image": "https://randomuser.me/api/portraits/men/1.jpg" }
-      ],
-      "comments": 45,
-      "is_liked": true,
-      "comments_list": [
-        {
-          "username": "ava_anderson",
-          "profile_image": "https://randomuser.me/api/portraits/women/12.jpg",
-          "comment": "These look delicious! 😋",
-          "likes": 10
-        }
-      ]
-    }
-  ]
-  
+  {
+    "id": 1,
+    "username": "john_doe",
+    "profile_image": "https://randomuser.me/api/portraits/men/1.jpg",
+    "post_image": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?crop=entropy&cs=tinysrgb&fit=max&ixid=MnwzNjc5OXwwfDF8c2VhY2h8Mnx8Y29mZmVlfGVufDB8fHx8fDE2NjQ4MjgxNTM&ixlib=rb-1.2.1&q=80&w=1080",
+    "caption": "Amazing sunset at the beach! 🌅 #SunsetLover",
+    "location": "Miami, Florida",
+    "likes": 1253,
+    "liked_by": [
+      { "username": "emma_smith", "profile_image": "https://randomuser.me/api/portraits/women/2.jpg" },
+      { "username": "alex_jones", "profile_image": "https://randomuser.me/api/portraits/men/3.jpg" }
+    ],
+    "comments": 98,
+    "is_liked": false,
+    "comments_list": [
+      {
+        "username": "emma_smith",
+        "profile_image": "https://randomuser.me/api/portraits/women/2.jpg",
+        "comment": "Wow, this view is amazing! 😍",
+        "likes": 32,
+        "is_liked": false,
+        "replies": [
+          {
+            "username": "john_doe",
+            "profile_image": "https://randomuser.me/api/portraits/men/1.jpg",
+            "comment": "I know right! 🌅",
+            "is_liked": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "username": "sophia_moore",
+    "profile_image": "https://randomuser.me/api/portraits/women/5.jpg",
+    "post_image": "https://people.com/thmb/FscY8nO00Ol3QHwvrTSmHYgg_JE=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():focal(599x209:601x211):format(webp)/christiano-ronaldo-2-9af96f2d100549c68378dabd3915134a.jpg",
+    "caption": "Exploring the mountains 🏔️💙",
+    "location": "Aspen, Colorado",
+    "likes": 3090,
+    "liked_by": [
+      { "username": "john_doe", "profile_image": "https://randomuser.me/api/portraits/men/1.jpg" },
+      { "username": "michael_brown", "profile_image": "https://randomuser.me/api/portraits/men/6.jpg" }
+    ],
+    "comments": 154,
+    "is_liked": true,
+    "comments_list": [
+      {
+        "username": "john_doe",
+        "profile_image": "https://randomuser.me/api/portraits/men/1.jpg",
+        "comment": "This place looks magical! ✨",
+        "likes": 45,
+        "is_liked": false,
+        "replies": [
+          {
+            "username": "sophia_moore",
+            "profile_image": "https://randomuser.me/api/portraits/women/5.jpg",
+            "comment": "It really is! 🏔️💙",
+            "is_liked": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "username": "michael_brown",
+    "profile_image": "https://randomuser.me/api/portraits/men/6.jpg",
+    "post_image": "https://images.unsplash.com/photo-1522202176988-66273c2fd55f",
+    "caption": "Road trip adventures 🚗💨",
+    "location": "Route 66, USA",
+    "likes": 2107,
+    "liked_by": [
+      { "username": "emma_smith", "profile_image": "https://randomuser.me/api/portraits/women/2.jpg" }
+    ],
+    "comments": 87,
+    "is_liked": false,
+    "comments_list": [
+      {
+        "username": "alex_jones",
+        "profile_image": "https://randomuser.me/api/portraits/men/3.jpg",
+        "comment": "Dream trip! 🛣️",
+        "likes": 25,
+        "is_liked": false
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "username": "olivia_jackson",
+    "profile_image": "https://randomuser.me/api/portraits/women/7.jpg",
+    "post_image": "https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0",
+    "caption": "Best coffee in town ☕❤️",
+    "location": "Seattle, Washington",
+    "likes": 2750,
+    "liked_by": [
+      { "username": "sophia_moore", "profile_image": "https://randomuser.me/api/portraits/women/5.jpg" }
+    ],
+    "comments": 200,
+    "is_liked": false,
+    "comments_list": [
+      {
+        "username": "michael_brown",
+        "profile_image": "https://randomuser.me/api/portraits/men/6.jpg",
+        "comment": "That looks delicious! ☕",
+        "likes": 30,
+        "is_liked": false
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "username": "alex_jones",
+    "profile_image": "https://randomuser.me/api/portraits/men/3.jpg",
+    "post_image": "https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?crop=entropy&cs=tinysrgb&fit=max&ixid=MnwzNjc5OXwwfDF8c2VhY2h8MXx8Y2l0eXxjb3VwbGV8ZW58MHx8fHwxNjY0NzA1Nzk2&ixlib=rb-1.2.1&q=80&w=1080",
+    "caption": "City lights at night 🌃✨",
+    "location": "New York City",
+    "likes": 3155,
+    "liked_by": [
+      { "username": "john_doe", "profile_image": "https://randomuser.me/api/portraits/men/1.jpg" }
+    ],
+    "comments": 134,
+    "is_liked": false,
+    "comments_list": [
+      {
+        "username": "olivia_jackson",
+        "profile_image": "https://randomuser.me/api/portraits/women/7.jpg",
+        "comment": "NYC never sleeps! 🏙️",
+        "likes": 18,
+        "is_liked": false
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "username": "emma_smith",
+    "profile_image": "https://randomuser.me/api/portraits/women/2.jpg",
+    "post_image": "https://hips.hearstapps.com/hmg-prod/images/lionel-messi-celebrates-after-their-sides-third-goal-by-news-photo-1686170172.jpg?crop=0.66653xw:1xh;center,top&resize=640:*",
+    "caption": "Weekend getaway by the lake 🌊",
+    "location": "Lake Tahoe",
+    "likes": 1893,
+    "liked_by": [
+      { "username": "alex_jones", "profile_image": "https://randomuser.me/api/portraits/men/3.jpg" }
+    ],
+    "comments": 90,
+    "is_liked": false,
+    "comments_list": [
+      {
+        "username": "sophia_moore",
+        "profile_image": "https://randomuser.me/api/portraits/women/5.jpg",
+        "comment": "Such a peaceful place! 🌊",
+        "likes": 27,
+        "is_liked": false
+      }
+    ]
+  }
+]

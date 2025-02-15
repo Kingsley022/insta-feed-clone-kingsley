@@ -18,11 +18,12 @@ profile_image: string;
 }
 
 interface Comment {
-username: string;
-profile_image: string;
-comment: string;
-likes: number;
-replies?: Reply[]; // Optional, as not all comments have replies
+    username: string;
+    profile_image: string;
+    comment: string;
+    likes: number;
+    is_liked: boolean;
+    replies?: Reply[]; // Optional, as not all comments have replies
 }
 
 interface Reply {
