@@ -8,18 +8,18 @@
 
 /* Native CSS */
 .hide-scroll{
-    scrollbar-width: none;
-    -ms-overflow-style: none;
-  }
-  
-  .hide-scroll::-webkit-scrollbar {
-    display: none;
-  }
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
 
-  .emoji-picker-react .mood-picker {
-    display: none;
-  }
+.hide-scroll::-webkit-scrollbar {
+  display: none;
+}
 
-  .emoji-background{
-    background-color: black;
-  }
+.emoji-picker-react .mood-picker {
+  display: none;
+}
+
+.emoji-background{
+  background-color: black;
+}

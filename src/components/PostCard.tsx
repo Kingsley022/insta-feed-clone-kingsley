@@ -44,7 +44,9 @@ const PostCard = ({post}:{post:Post}) => {
 
     return (
         <>
+
             {openComments && <Comments openComments={openComments} setOpenComments={setOpenComments}/>}
+
             <div className="flex flex-col gap-2" key={post.id}>
                 {/* Post heeader */}
                 <div className="flex justify-between items-center">
@@ -95,7 +97,7 @@ const PostCard = ({post}:{post:Post}) => {
                             )
                         }
 
-                        <RiChat3Line className="cursor-pointer"/>
+                        <RiChat3Line className="cursor-pointer" onClick={handleViewComments}/>
                         <FiSend className="cursor-pointer"/>
                     </div>
 
@@ -133,7 +135,11 @@ const PostCard = ({post}:{post:Post}) => {
 
                 {/* Comments */}
                 <div className="flex flex-col">
-                    <span onClick={handleViewComments} className="text-[gray] cursor-pointer">View all 156,261 comments</span>
+                    {post.comments_list && (
+                        <span onClick={handleViewComments} className="text-[gray] cursor-pointer">
+                            {post.comments_list.length > 1 ? `View all ${post.comments_list.length } comments` : "View comment"}
+                        </span>                        
+                    )}
                     <CommentForm id={post.id}/>
                 </div>
             </div>

@@ -1,5 +1,3 @@
-// import { LiaTimesSolid } from 'react-icons/lia'
-
 import { useContext } from "react"
 import { AppContext } from "./Main"
 import post from "../assets/images/user.jpg"
@@ -8,6 +6,7 @@ import { IoIosStar } from "react-icons/io";
 import { MdOutlineMoreHoriz } from "react-icons/md";
 import { FaHeart, FaRegHeart } from "react-icons/fa";
 import { LiaTimesSolid } from "react-icons/lia";
+import CommentForm2 from "./CommentForm2";
 
 interface Props {
     openComments: boolean,
@@ -50,7 +49,7 @@ const Comments = ({openComments, setOpenComments}:Props) => {
     
     
     return (
-        <div className="z-50 bg-gray-400 h-[100vh] overflow-hidden w-full absolute top-0 left-0 flex justify-center items-center">
+        <div className="z-50 bg-black/60 backdrop-blur-none h-[100vh] overflow-hidden w-full absolute top-0 left-0 flex justify-center items-center">
             
             <LiaTimesSolid 
                 onClick={() => setOpenComments(!openComments)}
@@ -76,7 +75,7 @@ const Comments = ({openComments, setOpenComments}:Props) => {
                     </div>
                     
                     {/* Comments */}
-                    <div className="flex flex-col gap-4 px-6 py-6 h-[85%] overflow-y-scroll hide-scroll">
+                    <div className="flex flex-col gap-4 px-6 py-6 h-[75%] overflow-y-scroll hide-scroll">
                         {selectedPost?.comments_list.map((comment, index)=> (
                             <div className="flex justify-between items-center" key={index}>
                                 <div className="flex gap-2">
@@ -107,8 +106,13 @@ const Comments = ({openComments, setOpenComments}:Props) => {
                             </div>
                         ))}
                     </div>
+
+                    <div className="px-6 absolute bottom-0 w-full py-3 border-t-1 border-t-[#80808066]">
+                        <CommentForm2 id={selectedPost?.id || 0}/>
+                    </div>
                 </div>
             </div>
+
         </div>
     )
 }
