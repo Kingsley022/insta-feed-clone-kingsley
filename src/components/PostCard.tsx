@@ -8,6 +8,7 @@ import { useContext, useState } from 'react'
 import { AppContext } from './Main'
 import Comments from './Comments'
 import CommentForm from './CommentForm'
+import Caption from './Caption'
 
 const PostCard = ({post}:{post:Post}) => {
 
@@ -153,12 +154,7 @@ const PostCard = ({post}:{post:Post}) => {
                 </div>
 
                 {/* Caption */}
-                <div className="">
-                    <p className="">
-                        <span className="text-white font-semibold inline-block mr-2">{post.username}</span>
-                        {post.caption}
-                    </p>
-                </div>
+                <Caption username={post.username} caption={post.caption} />
 
                 {/* Comments */}
                 <div className="flex flex-col">
