@@ -44,7 +44,7 @@ const Posts = () => {
     }, [page, visiblePosts]);
 
     return (
-        <div className="flex flex-col px-24 mt-4 gap-6">
+        <div className="flex flex-col lg:px-24 md:px-24 mt-4 gap-6">
             {visiblePosts.map((post) => (
                 <PostCard post={post} key={post.id} />
             ))}

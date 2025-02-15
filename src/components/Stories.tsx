@@ -63,7 +63,7 @@ const Stories = () => {
 
     return (
         <div className="relative overflow-hidden w-full">
-            <div ref={storiesRef} className="flex px-3 py-6 gap-[18.5px] justify-between overflow-x-scroll hide-scroll">
+            <div ref={storiesRef} className="flex px-3 lg:py-6 md:py-6 py-3 gap-[18.5px] justify-between overflow-x-scroll hide-scroll">
                 {stories?.map((story) => (
                     <div key={story.id} className="flex flex-col gap-1 items-center cursor-pointer">
                         <div className="relative w-17 h-17 flex items-center justify-center">

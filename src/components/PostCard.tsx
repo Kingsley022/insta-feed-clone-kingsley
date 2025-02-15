@@ -95,7 +95,7 @@ const PostCard = ({post}:{post:Post}) => {
                 </div>
 
                 {/* Post Image */}
-                <img src={post.post_image} alt="Post" className="rounded-md h-[500px] object-cover"/>
+                <img src={post.post_image} alt="Post" className="lg:rounded-md md:rounded-md lg:h-[500px] md:h-[500px] h-[400px] object-cover"/>
 
                 {/* Icons */}
                 <div className="flex justify-between items-center text-2xl mt-4">
