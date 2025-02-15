@@ -33,8 +33,8 @@ const Main = () => {
     
     return (
         <AppContext.Provider value={{posts, setPosts, selectedPost, setSelectedPost, user}}>
-            <main className="col-span-10 flex gap-6 overflow-y-scroll">
-                <div className="text-white w-[66%]">
+            <main className="flex gap-6 overflow-y-scroll">
+                <div className="text-white lg:w-[66%] w-full">
                     <Stories/>
                     <Posts/>
                 </div>

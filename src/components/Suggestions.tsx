@@ -21,7 +21,7 @@ const Suggestions = () => {
     }
 
     return (
-        <div className="w-[34%] px-6 py-10">
+        <div className="w-[34%] px-6 py-10 hidden lg:block">
 
             {/* Header */}
             <div className="flex items-center justify-between">

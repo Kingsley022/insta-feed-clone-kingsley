@@ -4,7 +4,7 @@ import { CiSearch } from "react-icons/ci";
 import { MdOutlineExplore } from "react-icons/md";
 import { BiMoviePlay } from "react-icons/bi";
 import { IoChatbubbleEllipsesOutline } from "react-icons/io5";
-import { FaRegHeart, FaRegUser } from "react-icons/fa";
+import { FaInstagram, FaRegHeart, FaRegUser } from "react-icons/fa";
 import { CgAddR } from "react-icons/cg";
 import { FiMenu } from "react-icons/fi";
 
@@ -67,8 +67,9 @@ const SideMenu = () => {
     ];
 
     return (
-        <aside className="col-span-2 h-[100vh] px-6 py-12 flex flex-col gap-6 border-r-1 border-r-[#8080804b]">
-            <img src={logo} alt="instagram logo" className="w-[120px] object-contain mx-2"/>
+        <aside className="lg:w-[20%] h-[100vh] px-6 py-12 flex flex-col gap-6 border-r-1 border-r-[#8080804b]">
+            <img src={logo} alt="instagram logo" className="w-[120px] object-contain mx-2 md:hidden lg:block"/>
+            <FaInstagram className="lg:hidden md:block text-white mx-2 text-2xl" />
             <div className="flex flex-col">
                 {
                     menuItems.map(item => (
@@ -76,7 +77,7 @@ const SideMenu = () => {
                             key={item.id}
                             className="flex text-white items-center px-2 py-3 gap-3 hover:bg-[#161616] transition-all rounded cursor-pointer">
                             <item.icon className="text-2xl"/>
-                            <span style={{fontWeight: item?.pathname == "/" ? "bold" : ""}}>{item.title}</span>
+                            <span className="lg:block md:hidden" style={{fontWeight: item?.pathname == "/" ? "bold" : ""}}>{item.title}</span>
                         </div>
                     ))
                 }

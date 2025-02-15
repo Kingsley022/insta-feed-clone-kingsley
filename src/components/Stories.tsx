@@ -89,13 +89,13 @@ const Stories = () => {
             </div>
 
             {canScrollLeft && (
-                <div onClick={scrollLeft} className=" absolute top-[35%] left-6 bg-white w-[25px] h-[25px] flex justify-center items-center rounded-full cursor-pointer">
+                <div onClick={scrollLeft} className="lg:flex hidden absolute top-[35%] left-6 bg-white w-[25px] h-[25px] justify-center items-center rounded-full cursor-pointer">
                     <MdKeyboardArrowLeft className="text-black text-2xl" />
                 </div>
             )}
 
             {canScrollRight && (
-                <div onClick={scrollRight} className=" absolute top-[35%] right-6 bg-white w-[25px] h-[25px] flex justify-center items-center rounded-full cursor-pointer">
+                <div onClick={scrollRight} className="lg:flex hidden  absolute top-[35%] right-6 bg-white w-[25px] h-[25px] justify-center items-center rounded-full cursor-pointer">
                     <MdKeyboardArrowRight className="text-black text-2xl" />
                 </div>
             )}
