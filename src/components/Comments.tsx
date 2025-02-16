@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import { useContext } from "react"
 import post from "../assets/images/user.jpg"
 import ProfilePicture from "./ProfilePicture";
@@ -56,7 +57,13 @@ const Comments = ({openComments, setOpenComments}:Props) => {
                 className='text-white fixed right-0 text-2xl my-3 lg:mx-6 mx-3 top-0 cursor-pointer' 
             />
 
-            <div className="flex bg-black lg:h-[90vh] h-[85vh] lg:w-[80%] w-full">
+            <motion.div 
+                initial={{ y: 50, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                exit={{ y: 50, opacity: 0 }}
+                transition={{ duration: 0.3, ease: "easeOut" }}
+                className="flex bg-black lg:h-[90vh] h-[85vh] lg:w-[80%] w-full"
+            >
                 <img src={selectedPost?.post_image} alt="" className="w-[50%] object-cover lg:block hidden" />
 
                 <div className="lg:w-[50%] w-full relative">
@@ -111,7 +118,7 @@ const Comments = ({openComments, setOpenComments}:Props) => {
                         <CommentForm2 id={selectedPost?.id || 0}/>
                     </div>
                 </div>
-            </div>
+            </motion.div>
 
         </div>
     )

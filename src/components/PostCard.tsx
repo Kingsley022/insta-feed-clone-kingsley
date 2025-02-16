@@ -9,11 +9,13 @@ import { AppContext } from "../App";
 import Comments from './Comments'
 import CommentForm from './CommentForm'
 import Caption from './Caption'
+import QuickActions from './QuickActions'
 
 const PostCard = ({post}:{post:Post}) => {
 
     const context = useContext(AppContext);
     const [openComments, setOpenComments] = useState(false);
+    const [openActionMenu, setOpenActionMenu] = useState(false);
 
     if(!context) return;
     const {setPosts, posts, setSelectedPost} = context;
@@ -62,7 +64,8 @@ const PostCard = ({post}:{post:Post}) => {
         <>
 
             {openComments && <Comments openComments={openComments} setOpenComments={setOpenComments}/>}
-
+            {openActionMenu && <QuickActions openActionMenu={openActionMenu} setOpenActionMenu={setOpenActionMenu}/>}
+            
             <div className="flex flex-col gap-2" key={post.id}>
                 {/* Post heeader */}
                 <div className="flex justify-between items-center">
@@ -91,7 +94,7 @@ const PostCard = ({post}:{post:Post}) => {
                         </div>
                     </div>
 
-                    <IoIosMore className="text-lg cursor-pointer"/>
+                    <IoIosMore onClick={() => setOpenActionMenu(!openActionMenu)} className="text-lg cursor-pointer"/>
                 </div>
 
                 {/* Post Image */}
