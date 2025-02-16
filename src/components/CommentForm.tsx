@@ -74,7 +74,7 @@ const CommentForm = ({id}:{id:number}) => {
                 
                 {/* Render the emoji picker*/}
                 {emojiPickerVisible && (
-                    <div className="absolute top-[2rem] z-10 right-[-55%]">
+                    <div className="absolute lg:top-[2rem] top-[-25rem] z-10 lg:right-[-55%] right-[0rem]">
                         <EmojiPicker 
                             onEmojiClick={handleEmojiClick} 
                             searchDisabled={true}
