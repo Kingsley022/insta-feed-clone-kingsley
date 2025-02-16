@@ -49,17 +49,17 @@ const Comments = ({openComments, setOpenComments}:Props) => {
     
     
     return (
-        <div className="z-50 bg-black/60 backdrop-blur-none h-[100vh] overflow-hidden w-full absolute top-0 left-0 flex justify-center items-center">
+        <div className="z-50 lg:bg-black/60 bg-black backdrop-blur-none h-[100vh] overflow-hidden w-full absolute top-0 left-0 flex justify-center items-center">
             
             <LiaTimesSolid 
                 onClick={() => setOpenComments(!openComments)}
-                className='text-white fixed right-0 text-2xl my-3 mx-6 top-0 cursor-pointer' 
+                className='text-white fixed right-0 text-2xl my-3 lg:mx-6 mx-3 top-0 cursor-pointer' 
             />
 
-            <div className="flex bg-black h-[90vh] w-[80%]">
-                <img src={selectedPost?.post_image} alt="" className="w-[50%] object-cover" />
+            <div className="flex bg-black lg:h-[90vh] h-[85vh] lg:w-[80%] w-full">
+                <img src={selectedPost?.post_image} alt="" className="w-[50%] object-cover lg:block hidden" />
 
-                <div className="w-[50%] relative">
+                <div className="lg:w-[50%] w-full relative">
 
                     {/* Header */}
                     <div className="top-0 sticky flex justify-between w-full p-4 border-b-1 border-b-[#80808066]">
