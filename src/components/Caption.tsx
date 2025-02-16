@@ -10,7 +10,7 @@ const Caption = ({ username, caption }: Props) => {
     const charLimit = 100;
 
     return (
-        <div>
+        <div className="lg:px-0 md:px-0 px-2">
             <p className="text-white">
                 <span className="font-semibold inline-block mr-2">{username}</span>
                 {isExpanded || caption.length <= charLimit ? (

@@ -87,7 +87,7 @@ const PostCard = ({post}:{post:Post}) => {
             
             <div className="flex flex-col gap-2" key={post.id}>
                 {/* Post heeader */}
-                <div className="flex justify-between items-center">
+                <div className="flex justify-between items-center lg:px-0 md:px-0 px-2">
                     <div className="flex gap-2 items-center">
                         {/* Profile picture */}
                         <div className="relative w-12 h-12 flex items-center justify-center">
@@ -120,7 +120,7 @@ const PostCard = ({post}:{post:Post}) => {
                 <img src={post.post_image} alt="Post" className="lg:rounded-md md:rounded-md lg:h-[500px] md:h-[500px] h-[400px] object-cover"/>
 
                 {/* Icons */}
-                <div className="flex justify-between items-center text-2xl mt-4">
+                <div className="flex justify-between items-center text-2xl mt-4 lg:px-0 md:px-0 px-2">
                     <div className="flex items-center gap-3">
                         {post.is_liked ? (
                                 <FaHeart 
@@ -155,7 +155,7 @@ const PostCard = ({post}:{post:Post}) => {
                 </div>
 
                 {/* Likes */}
-                <div className="flex items-center">
+                <div className="flex items-center lg:px-0 md:px-0 px-2">
                     <div className="relative h-6 w-12">
                         {post.liked_by.map((liker:any, index:number) => (
                             <div
@@ -179,7 +179,7 @@ const PostCard = ({post}:{post:Post}) => {
                 <Caption username={post.username} caption={post.caption} />
 
                 {/* Comments */}
-                <div className="flex flex-col">
+                <div className="flex flex-col lg:px-0 md:px-0 px-2">
                     {post.comments_list && (
                         <span onClick={handleViewComments} className="text-[gray] cursor-pointer">
                             {post.comments_list.length > 1 ? `View all ${post.comments_list.length } comments` : "View comment"}
