@@ -60,6 +60,25 @@ const PostCard = ({post}:{post:Post}) => {
         setOpenComments(true);
     }
 
+    // Handle share
+    const handleShare = async (postId: number) => {
+        const postUrl = `${window.location.origin}/post/${postId}`;
+    
+        if (navigator.share) {
+            try {
+                await navigator.share({
+                    title: "Check out this post!",
+                    url: postUrl,
+                });
+            } catch (error) {
+                console.error("Error sharing:", error);
+            }
+        } else {
+            navigator.clipboard.writeText(postUrl);
+            alert("Link copied to clipboard!");
+        }
+    };
+
     return (
         <>
 
@@ -117,7 +136,7 @@ const PostCard = ({post}:{post:Post}) => {
                         }
 
                         <RiChat3Line className="cursor-pointer" onClick={handleViewComments}/>
-                        <FiSend className="cursor-pointer"/>
+                        <FiSend  onClick={() => handleShare(post.id)}  className="cursor-pointer"/>
                     </div>
 
                     {post.is_saved ? ( 
